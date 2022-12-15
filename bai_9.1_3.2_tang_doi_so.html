@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<lable>
+    Nhập số <input onchange="changeNumber()" type="number">
+</lable>
+<p id="result"></p>
+<script>
+    function changeNumber() {
+        let number = +document.querySelector('input').value;
+        document.getElementById('result').innerHTML = traVe(number);
+    }
+    function traVe(num) {
+        return num + 1;
+    }
+</script>
+</body>
+</html>
