@@ -18,11 +18,9 @@
         let nhapVao = +document.getElementById('number').value;
         let unit = document.getElementById('unit').value;
         if (unit == "feet") {
-            met = feetToMeter(nhapVao);
-            document.getElementById('traVe').innerHTML = 'Bằng ' + met + 'F';
+            document.getElementById('traVe').innerHTML = 'Bằng ' + feetToMeter(nhapVao) + 'F';
         } else {
-            f = meterTofeet(nhapVao);
-            document.getElementById('traVe').innerHTML = 'Bằng ' + f + 'mét'
+            document.getElementById('traVe').innerHTML = 'Bằng ' + feetToMeter(nhapVao) + 'mét';
         }
     }
 

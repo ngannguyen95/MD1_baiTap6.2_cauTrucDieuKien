@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<lable>Nhập a
+    <input id="aNumber" type="text"></lable>
+<lable>Nhập b
+    <input id="bNumber" type="text"></lable>
+<button onclick="result()">Kết quả</button>
+<p  id="ketQua"></p>
+<script>
+function result() {
+    let a= +document.getElementById('aNumber').value;
+    let b= +document.getElementById('bNumber').value;
+    document.getElementById('ketQua').innerHTML=compare(a,b);
+}
+  function compare(a,b) {
+    if (a<=b){
+        return 'tổng 2 số : '+ (a + b);
+    } else{
+        return 'giá trị trả về :' + a;
+    }
+  }
+</script>
+</body>
+</html>

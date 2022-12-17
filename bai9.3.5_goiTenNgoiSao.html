@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let inputName = +prompt('Nhập vào tên: ');
+    let humanStar = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let star = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    alert(f(inputName,humanStar,star)) ;
+
+    function f(a, b,c) {
+        for (let i = 0; i < a.length; i++) {
+            if (a.toLowerCase() == b[i].toLowerCase()) {
+                return "tên ngôi sao  "+ c[i];
+                break;
+            }
+        }return "không có ngôi sao tương ứng";
+    }
+
+</script>
+</body>
+</html>
